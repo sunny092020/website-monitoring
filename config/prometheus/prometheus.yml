@@ -1,5 +1,5 @@
 global:
-  scrape_interval: 15s
+  scrape_interval: 30s
   evaluation_interval: 1m
 
 rule_files:
@@ -7,7 +7,7 @@ rule_files:
 
 scrape_configs:
 
-  - job_name: "website-monitoring-http"
+  - job_name: "http"
     metrics_path: /probe
     params:
       module: [http_2xx]
@@ -22,7 +22,7 @@ scrape_configs:
       - target_label: __address__
         replacement: blackbox-exporter:9115
 
-  - job_name: "website-monitoring-icmp"
+  - job_name: "icmp"
     metrics_path: /probe
     params:
       module: [icmp]
