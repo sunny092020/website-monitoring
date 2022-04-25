@@ -18,7 +18,7 @@ Monitore your websites availability, http status code (current and history), cer
 * `git clone git@github.com:mbelloiseau/website-monitoring.git && cd website-monitoring`
 * Edit `config/prometheus/targets.yml` (see targets.yml.example) or use `./gen_target.sh website-1.tld website-2.tld ...`
 * Create and start containers `docker-compose up -d`
-* [Visualize dashboards](http://localhost:3000/)
+* [Visualize dashboards](http://localhost:5000/)
 
 If you already have Prometheus and Prometheus blackbox exporter up and running just import the dashboards ([website-monitoring](dashboards/website-monitoring.json) or [overview](dashboards/overview.json)) and use the right [datasource](screenshots/import.png) and [jobs](screenshots/import.png) (http_job and icmp_job)
 

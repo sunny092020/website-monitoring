@@ -44,7 +44,7 @@ services:
     networks:
     - website_monitoring
     ports:
-    - "127.0.0.1:3000:3000"
+    - "5000:5000"
     environment:
     - "GF_SECURITY_ADMIN_PASSWORD=CHANGEME"
     - "GF_AUTH_ANONYMOUS_ENABLED=true"
